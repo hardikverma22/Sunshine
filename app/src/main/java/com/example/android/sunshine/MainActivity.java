@@ -1,5 +1,6 @@
 package com.example.android.sunshine;
 import android.app.FragmentManager;
+<<<<<<< HEAD
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
@@ -14,6 +15,15 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
+=======
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+>>>>>>> de8babfe8f7c39c4215388388979c8f3399c5f2f
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -22,8 +32,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+=======
+>>>>>>> de8babfe8f7c39c4215388388979c8f3399c5f2f
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 
     //animation demo
         ImageView img = (ImageView)findViewById(R.id.ImageViewCap);
@@ -76,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
         Button resetBtn = (Button)findViewById(R.id.resetBtn);
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+=======
+        Button enterBtn = (Button)findViewById(R.id.EnterButton);
+        Button resetBtn = (Button)findViewById(R.id.resetBtn);
+        resetBtn.setOnClickListener(new View.OnClickListener() {
+>>>>>>> de8babfe8f7c39c4215388388979c8f3399c5f2f
             @Override
             public void onClick(View v) {
                 Log.d("test","inside restBtn listner!!!");
@@ -94,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager manager = getFragmentManager();
                MyDialogFragment dialog = new MyDialogFragment();
                 dialog.show(manager,"fragment_dialog");
+<<<<<<< HEAD
 
 
 
@@ -130,6 +150,8 @@ public class MainActivity extends AppCompatActivity {
 // number to NotificationManager.cancel().
                 int mNotificationId=5;
                 mNotificationManager.notify(mNotificationId, mBuilder.build());
+=======
+>>>>>>> de8babfe8f7c39c4215388388979c8f3399c5f2f
             }
         });
        //register
